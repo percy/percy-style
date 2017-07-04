@@ -121,6 +121,9 @@ RSpec/ImplicitExpect:
 RSpec/MessageSpies:
   EnforcedStyle: receive
 
+RSpec/NestedGroups:
+  Enabled: false
+
 RSpec/NotToNot:
   EnforcedStyle: to_not
 
