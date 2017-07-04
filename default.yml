@@ -1,0 +1,128 @@
+require: rubocop-rspec
+
+AllCops:
+  Include:
+    - Rakefile
+    - lib/**/*.rake
+  Exclude:
+    - 'vendor/**/*'
+    - '*.gemspec'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Lint/RescueException:
+  Exclude:
+    - 'lib/tasks/*.rake'
+
+Metrics/LineLength:
+  Max: 100
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FileName:
+  Exclude: ['Gemfile', 'Guardfile']
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+# Disable Style/NumericLiterals so numbers don't need underscores
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+  AllowInnerSlashes: true
+  Exclude:
+    - 'Guardfile'
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/HookArgument:
+  EnforcedStyle: each
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ImplicitExpect:
+  EnforcedStyle: should
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+RSpec/NotToNot:
+  EnforcedStyle: to_not
+
+RSpec/VerifiedDoubles:
+  Enabled: false
