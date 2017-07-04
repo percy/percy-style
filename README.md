@@ -1,6 +1,6 @@
 # percy-style
 
-Percy styleguides and shared style configs.
+Percy shared style configs.
 
 ## Installation
 
