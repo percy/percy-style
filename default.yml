@@ -69,7 +69,7 @@ Metrics/BlockLength:
 Style/DoubleNegation:
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Exclude: ['Gemfile', 'Guardfile']
 
 Style/FormatStringToken:
