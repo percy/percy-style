@@ -129,3 +129,7 @@ RSpec/NotToNot:
 
 RSpec/VerifiedDoubles:
   Enabled: false
+
+Style/BlockDelimiters:
+  Exclude:
+    ['spec/**/*_spec.rb']
