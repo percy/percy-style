@@ -29,6 +29,10 @@ Layout/MultilineOperationIndentation:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+# This seems to break some require lines somehow:
+Layout/EmptyLinesAroundArguments:
+  Enabled: false
+
 Lint/EndAlignment:
   EnforcedStyleAlignWith: variable
 
