@@ -51,6 +51,9 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 Metrics/AbcSize:
   Enabled: false
 
