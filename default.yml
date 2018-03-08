@@ -18,6 +18,9 @@ Layout/AlignParameters:
 Layout/CaseIndentation:
   EnforcedStyle: end
 
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
 Layout/IndentArray:
   EnforcedStyle: consistent
 
@@ -33,9 +36,6 @@ Layout/SpaceInsideHashLiteralBraces:
 # This seems to break some require lines somehow:
 Layout/EmptyLinesAroundArguments:
   Enabled: false
-
-Lint/EndAlignment:
-  EnforcedStyleAlignWith: variable
 
 Lint/RescueException:
   Exclude:
@@ -109,7 +109,10 @@ Style/SymbolArray:
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 
 RSpec/AnyInstance:
