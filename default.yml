@@ -84,6 +84,9 @@ Style/DoubleNegation:
 Naming/FileName:
   Exclude: ['Gemfile', 'Guardfile']
 
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
 Style/FormatStringToken:
   EnforcedStyle: template
 
