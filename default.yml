@@ -50,19 +50,6 @@ Style/MethodDefParentheses:
 Style/SignalException:
   Enabled: false
 
-Style/NumericLiterals:
-  Exclude:
-    - spec/features/donations/metrics_spec.rb
-
-Metrics/ModuleLength:
-  Exclude:
-    - spec/support/07_feature_helpers.rb
-
-Style/PredicateName:
-  Exclude:
-    - "app/serializers/donation_form_serializer.rb"
-    - "spec/models/concerns/version_helper_spec.rb"
-
 Rails:
   Enabled: true
 
@@ -79,19 +66,11 @@ Rails/Output:
 RSpec/Focused:
   Enabled: true
 
-Style/MethodName:
-  Exclude:
-    - spec/support/07_feature_helpers.rb
-
 Metrics/CyclomaticComplexity:
   Enabled: false
 
 Metrics/PerceivedComplexity:
   Enabled: false
-
-Style/UnneededInterpolation:
-  Exclude:
-    - app/helpers/advanced_search_helper.rb
 
 Style/FrozenStringLiteralComment:
   Enabled: false
@@ -102,13 +81,5 @@ Style/TrailingCommaInLiteral:
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: 'comma'
 
-Lint/UnusedMethodArgument:
-  Exclude:
-    - app/controllers/concerns/after_sign_in_path.rb
-
 Rails/ApplicationRecord:
   Enabled: true
-
-Style/GlobalVars:
-  AllowedVariables:
-    - $captured_feature_spec_headers
