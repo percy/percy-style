@@ -1,6 +1,6 @@
-# percy-style
+# cw-style
 
-Percy shared style configs.
+charity: water shared code style configs for RuboCop. Forked from https://github.com/percy/percy-style.
 
 ## Installation
 
@@ -8,14 +8,14 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'percy-style'
+  gem 'cw-style'
 end
 ```
 
 Or, for a Ruby library, add this to your gemspec:
 
 ```ruby
-spec.add_development_dependency 'percy-style'
+spec.add_development_dependency 'cw-style'
 ```
 
 And then run:
@@ -30,7 +30,7 @@ Create a `.rubocop.yml` with the following directives:
 
 ```yaml
 inherit_gem:
-  percy-style:
+  cw-style:
     - default.yml
 ```
 
@@ -40,4 +40,4 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. Percy-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. Cw-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
