@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "percy/style/version"
+require "charity_water/style/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "percy-style"
-  spec.version       = Percy::Style::VERSION
-  spec.authors       = ["Team Percy"]
-  spec.email         = ["team@percy.io"]
+  spec.name          = "cw-style"
+  spec.version       = CharityWater::Style::VERSION
+  spec.authors       = ["charity: water"]
+  spec.email         = ["team@charitywater.org"]
 
-  spec.summary       = 'Percy style guides and shared style configs.'
-  spec.homepage      = 'https://github.com/percy/percy-style'
+  spec.summary       = 'charity: water style guides and shared style configs.'
+  spec.homepage      = 'https://github.com/charitywater/cw-style'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -28,8 +28,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 0.53"
-  spec.add_dependency "rubocop-rspec", "~> 1.24"
+  spec.add_dependency "rubocop", "= 0.49.1"
+  spec.add_dependency "rubocop-rspec-focused", "= 0.0.3"
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec"
 end

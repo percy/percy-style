@@ -1,64 +1,70 @@
-require: rubocop-rspec
+require:
+  - rubocop/rspec/focused
+  - ./lib/unless_with_multiple_conditions
+  - ./lib/private_attribute_accessors
+  - ./lib/update_not_update_attributes
 
 AllCops:
-  TargetRubyVersion: 2.4
-  Include:
-    - Rakefile
-    - lib/**/*.rake
+  TargetRubyVersion: 2.3
   Exclude:
-    - 'vendor/**/*'
     - '*.gemspec'
 
-Bundler/OrderedGems:
+BracesAroundHashParameters:
   Enabled: false
 
-Layout/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Layout/CaseIndentation:
-  EnforcedStyle: end
-
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
-
-Layout/IndentArray:
-  EnforcedStyle: consistent
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: no_space
-
-# This seems to break some require lines somehow:
-Layout/EmptyLinesAroundArguments:
+CaseIndentation:
   Enabled: false
 
-Lint/RescueException:
-  Exclude:
-    - 'lib/tasks/*.rake'
-
-Metrics/LineLength:
-  Max: 100
-
-Style/Documentation:
-  Enabled: false
-
-# Enable this to ease the transition to Ruby 3.0 where string literals will be frozen by default.
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/IfUnlessModifier:
+ClassLength:
   Enabled: false
 
 Metrics/AbcSize:
   Enabled: false
 
-Metrics/ClassLength:
+Style/GuardClause:
+  Exclude:
+    - "spec/**/*"
+
+RescueModifier:
+  Exclude:
+    - "spec/**/*"
+
+Style/RegexpLiteral:
   Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/TimeZone:
+  EnforcedStyle: 'flexible'
+
+Rails/Date:
+  EnforcedStyle: 'flexible'
+
+Rails/Output:
+  Exclude:
+    - "lib/tasks/*"
+
+RSpec/Focused:
+  Enabled: true
 
 Metrics/CyclomaticComplexity:
   Enabled: false
@@ -66,88 +72,14 @@ Metrics/CyclomaticComplexity:
 Metrics/PerceivedComplexity:
   Enabled: false
 
-Metrics/MethodLength:
+Style/FrozenStringLiteralComment:
   Enabled: false
 
-Metrics/ModuleLength:
-  Enabled: false
-
-Metrics/ParameterLists:
-  Enabled: false
-
-Metrics/BlockLength:
-  Enabled: false
-
-Style/DoubleNegation:
-  Enabled: false
-
-Naming/FileName:
-  Exclude: ['Gemfile', 'Guardfile']
-
-Naming/UncommunicativeMethodParamName:
-  Enabled: false
-
-Style/FormatStringToken:
-  EnforcedStyle: template
-
-# Disable Style/NumericLiterals so numbers don't need underscores
-Style/NumericLiterals:
-  Enabled: false
-
-Style/NumericPredicate:
-  EnforcedStyle: comparison
-
-Style/RedundantBegin:
-  Enabled: false
-
-Style/RegexpLiteral:
-  EnforcedStyle: slashes
-  AllowInnerSlashes: true
-  Exclude:
-    - 'Guardfile'
-
-Style/SymbolArray:
-  Enabled: false
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: 'comma'
 
 Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: consistent_comma
+  EnforcedStyleForMultiline: 'comma'
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-RSpec/AnyInstance:
-  Enabled: false
-
-RSpec/DescribedClass:
-  EnforcedStyle: explicit
-
-RSpec/ExampleLength:
-  Enabled: false
-
-RSpec/HookArgument:
-  EnforcedStyle: each
-
-RSpec/MultipleExpectations:
-  Enabled: false
-
-RSpec/ImplicitExpect:
-  EnforcedStyle: should
-
-RSpec/MessageSpies:
-  EnforcedStyle: receive
-
-RSpec/NestedGroups:
-  Enabled: false
-
-RSpec/NotToNot:
-  EnforcedStyle: to_not
-
-RSpec/VerifiedDoubles:
-  Enabled: false
-
-Style/BlockDelimiters:
-  Exclude:
-    ['spec/**/*_spec.rb']
+Rails/ApplicationRecord:
+  Enabled: true
