@@ -121,6 +121,9 @@ Style/TrailingCommaInHashLiteral:
 RSpec/AnyInstance:
   Enabled: false
 
+RSpec/Be:
+  Enabled: false
+
 RSpec/DescribedClass:
   EnforcedStyle: explicit
 
