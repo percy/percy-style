@@ -75,7 +75,7 @@ Naming/UncommunicativeMethodParamName:
   Enabled: false
 
 Style/AccessModifierDeclarations:
-  Enabled: false
+  EnforcedStyle: inline
 
 Style/BlockDelimiters:
   Exclude:
@@ -133,15 +133,6 @@ RSpec/Be:
 
 RSpec/DescribedClass:
   EnforcedStyle: explicit
-
-RSpec/EmptyLineAfterExampleGroup:
-  Enabled: false
-
-RSpec/EmptyLineAfterHook:
-  Enabled: false
-
-RSpec/EmptyLineAfterSubject:
-  Enabled: false
 
 RSpec/ExampleLength:
   Enabled: false
