@@ -44,16 +44,6 @@ Lint/RescueException:
 Metrics/LineLength:
   Max: 100
 
-Style/Documentation:
-  Enabled: false
-
-# Enable this to ease the transition to Ruby 3.0 where string literals will be frozen by default.
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/IfUnlessModifier:
-  Enabled: false
-
 Metrics/AbcSize:
   Enabled: false
 
@@ -78,13 +68,30 @@ Metrics/ParameterLists:
 Metrics/BlockLength:
   Enabled: false
 
-Style/DoubleNegation:
-  Enabled: false
-
 Naming/FileName:
   Exclude: ['Gemfile', 'Guardfile']
 
 Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+# Enable this to ease the transition to Ruby 3.0 where string literals will be frozen by default.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
   Enabled: false
 
 Style/FormatStringToken:
@@ -139,6 +146,9 @@ RSpec/MultipleExpectations:
 RSpec/ImplicitExpect:
   EnforcedStyle: should
 
+RSpec/ImplicitSubject:
+  Enabled: false
+
 RSpec/MessageSpies:
   EnforcedStyle: receive
 
@@ -150,7 +160,3 @@ RSpec/NotToNot:
 
 RSpec/VerifiedDoubles:
   Enabled: false
-
-Style/BlockDelimiters:
-  Exclude:
-    ['spec/**/*_spec.rb']
