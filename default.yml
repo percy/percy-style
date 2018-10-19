@@ -1,7 +1,6 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.4
   Include:
     - Rakefile
     - lib/**/*.rake
