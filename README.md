@@ -32,6 +32,10 @@ Create a `.rubocop.yml` with the following directives:
 inherit_gem:
   percy-style:
     - default.yml
+
+inherit_mode:
+  merge:
+    - Include
 ```
 
 Now, run:
