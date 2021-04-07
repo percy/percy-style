@@ -44,7 +44,7 @@ Lint/RescueException:
   Exclude:
     - 'lib/tasks/*.rake'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
 Metrics/AbcSize:
