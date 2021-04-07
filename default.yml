@@ -164,3 +164,6 @@ RSpec/NotToNot:
 
 RSpec/VerifiedDoubles:
   Enabled: false
+
+Style/SingleArgumentDig:
+  Enabled: false
