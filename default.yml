@@ -167,3 +167,6 @@ RSpec/VerifiedDoubles:
 
 Style/SingleArgumentDig:
   Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
