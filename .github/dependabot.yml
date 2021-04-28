@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "03:00"
+    timezone: US/Central
+  ignore:
+  - dependency-name: rubocop
+    versions:
+    - 1.4.2
+    - 1.9.1
