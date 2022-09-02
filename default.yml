@@ -1,7 +1,8 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.4
+  NewCops: enable
+  TargetRubyVersion: 2.7
   Include:
     - Rakefile
     - lib/**/*.rake
@@ -36,6 +37,9 @@ Layout/MultilineOperationIndentation:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+Layout/LineLength:
+  Max: 100
+
 # This seems to break some require lines somehow:
 Layout/EmptyLinesAroundArguments:
   Enabled: false
@@ -43,9 +47,6 @@ Layout/EmptyLinesAroundArguments:
 Lint/RescueException:
   Exclude:
     - 'lib/tasks/*.rake'
-
-Metrics/LineLength:
-  Max: 100
 
 Metrics/AbcSize:
   Enabled: false
