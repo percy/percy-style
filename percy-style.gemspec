@@ -28,8 +28,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 0.77.0"
+  # Handle Ruby 2.7 forward arguments properly in rubocop v0.79.0
+  # https://github.com/rubocop/rubocop/pull/7605
+  spec.add_dependency "rubocop", "~> 0.80"
   spec.add_dependency "rubocop-rspec", "~> 1.37.0"
-  spec.add_development_dependency "bundler", "~> 2.1"
+  spec.add_development_dependency "bundler", "~> 2.3"
   spec.add_development_dependency "rake", "~> 13.0"
 end
