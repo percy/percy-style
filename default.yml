@@ -100,6 +100,9 @@ Style/IfUnlessModifier:
 Style/FormatStringToken:
   EnforcedStyle: template
 
+Style/Lambda:
+  EnforcedStyle: line_count_dependent
+
 # Disable Style/NumericLiterals so numbers don't need underscores
 Style/NumericLiterals:
   Enabled: false
