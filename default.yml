@@ -1,7 +1,8 @@
-require: rubocop-rspec
+plugins:
+  - rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.3
   Include:
     - Rakefile
     - lib/**/*.rake
