@@ -15,7 +15,7 @@
 #
 # Budget: 50 guideline files per review. 0 already tracked here and
 # auto-discovered (CLAUDE.md etc.), so 50 entries are available:
-#   rules 7, reviewer agents 0, domain stack 14, conventions 4.
+#   rules 7, reviewer agents 0, domain stack 12, conventions 4.
 
 inheritance: true
 
@@ -61,10 +61,6 @@ knowledge_base:
       - files: "percy/browserstack-ai-harness-percy:stacks/stack-domain-percy-style/knowledge/TESTING.md"
         applyTo: "**"
       - files: "percy/browserstack-ai-harness-percy:stacks/stack-domain-percy-style/agents/stack-percy-style-rubocop-config-author.md"
-        applyTo: "**"
-      - files: "percy/browserstack-ai-harness-percy:stacks/stack-domain-percy-style/skills/stack:percy-style-consumer-rollout.md"
-        applyTo: "**"
-      - files: "percy/browserstack-ai-harness-percy:stacks/stack-domain-percy-style/skills/stack:percy-style-cop-tuning.md"
         applyTo: "**"
       # --- 4. Language and org conventions
       - files: "percy/browserstack-ai-harness-percy:stacks/stack-lang-ruby-rails/knowledge/ruby-rails-conventions.md"
